@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s linear;
+    /* outline: 1px solid limegreen !important; */
+}
+a{
+    text-decoration: none;
+    color: #564135;
+}
+body{
+    overflow-x: hidden;
+    background: #F4EEEC;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+main{
+    margin-top: 15%;
+}
+.nav-bar{
+    height: 52px;
+    width: 100%;
+    background: #F4EEEC;
+}
+.logo{
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    left: -13px;
+    top: -22px;
+}
+.nav_menu{
+    justify-content: space-between;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    display: none;
+    width: 450px;
+    height: 30px; 
+    left: 132px;
+}
+.nav_button{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.hamburger{
+    position: absolute;
+    top: -10px;
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    left: 87vw;
+    background: url('./logo_site/burger.png');
+    background-repeat: no-repeat ;
+    background-size:contain;
+    border: none;
+    display: block;
+}
+#p_m{
+    position: absolute;
+    display: none;
+    top: 52px;
+    left: 60%;
+    width: 40%;
+    z-index: 1000;
+    background: rgba(244, 238, 235, 0.85);
+    height: 0%;
+}
+#m_c{
+    opacity: 1;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.m_c_button{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+/*  */
+#title{
+    margin-top: 1vw;
+    text-align: center;
+    padding-right: 2%;
+    font-family: 'Absolute';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15vw;
+    color: #564135;
+}
+#on{
+    margin-top: -45px;
+    text-align: center;
+    padding-right: 2%;
+    font-family: 'Absolute';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 69px;
+    color: #564135;
+}
+#main{
+    width: 40%;
+    margin-top: 2vw;
+    margin-left: 29%;
+    font-family: 'OliverFont-Light-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    text-align: center;
+    color: #564135;
+}
+.bthp{
+    cursor: pointer;
+    border: none;
+    position: relative;
+    left: 36%;
+    margin-top: 5%;
+    width: 25vw;
+    height: 5vw;
+    background: #ECE3E2;
+}
+#bthpt{
+    margin-top: 0%;
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: center;
+    color: #564135;
+}
+#blogo{
+    margin-left: 34%;
+    width: 30vw;
+    height: 30vw;
+}
+#fq{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    text-align: center;
+    color: #564135;
+    margin-top: 10%;
+}
+@media (min-width: 768px) {
+    main{
+        margin-top: 0%;
+    }
+    #title{
+        font-size: 7vw;
+    }
+    #on{
+        margin-top: -2%;
+        font-size: 2.5vw;
+    }
+    #main{
+        font-size: 1vw;
+    }
+    .bthp{
+        left: 43.7%;
+        margin-top: 1.5%;
+        width: 10vw;
+        height: 2vw;
+    }
+    #bthpt{
+        font-size: 1.3vw;
+    }
+    #blogo{
+        margin-left: 43.7%;
+        width: 10vw;
+        height: 13vw;
+    }
+    #fq{
+        padding-right: 1%;
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+    /*  */
+    #p_m{
+        display: none;
+    }
+    #inner_txt1{
+        padding-top: 10%;
+    }
+    #mbox2_txt{
+        height: 17vw;
+        font-size: 1.2vw;
+    }
+    .hamburger{display: none;}
+    .nav_menu{display: flex;}
+    #fq{font-size: 4vh;}
+    #fcd{font-size: 2.6vh;}
+    .link_title{font-size: 4vh;}
+    .link{font-size: 3vh;}
+    #mean_text{
+        font-size: 1.5vw;
+    }
+    #vision{
+        font-size: 1.5vw;
+        margin-top: 13%;
+    }
+    #meaning,
+    #belive{font-size: 2.2vw;}
+    #beli_qute{
+        margin-left: 45%;
+        font-size: 1.7vw;
+    }
+    #lsit{
+        font-size: 2.4vw;
+    }
+    .mbox{
+        border-radius: 22px;
+    }
+    #mbox1_img{
+        height: 25vw;
+    }
+}
+@keyframes p_m_a {
+    0% {
+        height: 0vw;
+    }
+    100% {
+        height: 50vw;
+    }
+}
+@keyframes p_m_a_r {
+    0% { 
+        height: 50vw;
+    }
+    100% {
+        height: 0vw;
+    }
+}
+@keyframes m_c_t  {
+    0% { 
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes m_c_t_r {
+    0% { 
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@font-face {
+    font-family: "Absolute";
+    src: url("./fonts/Absolute.ttf");
+}
+@font-face {
+    font-family: "FLOREN";
+    src: url("./fonts/FLOREN-Regular.ttf");
+}
+@font-face {
+    font-family: 'OliverFont-Light-Regular';
+    src: url("./fonts/OliverFont-Light-Regular.ttf");
+}

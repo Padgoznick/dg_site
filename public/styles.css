@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s linear;
+    /* overflow-x: hidden; */
+    outline: 1px solid limegreen !important;
+}
+body{
+    overflow-x: hidden;
+    background: #F4EEEC;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.nav-bar{
+    height: 52px;
+    width: 100%;
+    background: #F4EEEC;
+}
+.logo{
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    left: -13px;
+    top: -22px;
+}
+.nav_menu{
+    justify-content: space-between;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    display: none;
+    width: 450px;
+    height: 30px; 
+    left: 132px;
+}
+.nav_socials{
+    justify-content: space-between;
+    list-style-type: none;
+    position: absolute;
+    top: 11px;
+    display: none;
+    width: 300px;
+    height: 40px; 
+    left: 80vw;
+}
+.social_space{
+    display: inline-block;
+    margin-left: 5%;
+    height: 80%;
+    width: 10%;
+}
+.nav_socials_m{
+    list-style-type: none;
+    list-style: none;
+    margin-top: 20%;
+    margin-left: 5%;
+    display: flex;
+    height: 5vw;
+    width: 25vh;
+    gap: 20px;
+    flex-direction: column;
+}
+.social_space_m{
+    display: inline-block;
+    margin-left: 5%;
+    height: 120%;
+    width: 13%;
+}
+#twitter{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: url('./logo_site/twit.png');
+    background-size: 100% 100%;
+    border: none;
+}
+#insta{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: url('./logo_site/inst.png');
+    background-size: 100% 100%;
+    border: none;
+}
+#email{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background: url('./logo_site/mail.png');
+    background-size: 100% 100%;
+    border: none;
+}
+.nav_button{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.hamburger{
+    position: absolute;
+    top: -10px;
+    height: 80px;
+    cursor: pointer;
+    width: 80px;
+    left: 87vw;
+    background: url('./logo_site/burger.png');
+    background-repeat: no-repeat ;
+    background-size:contain;
+    border: none;
+    display: block;
+}
+#p_m{
+    position: absolute;
+    display: none;
+    top: 52px;
+    left: 60%;
+    width: 40%;
+    z-index: 1000;
+    background: rgba(244, 238, 235, 0.85);
+    height: 0%;
+}
+#m_c{
+    opacity: 1;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.m_c_button{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.head_imgs_container{
+    width: 100%;
+    height: 32vw;
+    display: flex;
+}
+.headimg{
+    width: 380px;
+    height: 100%;
+}
+#im1{
+    background: url('./header_img/1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#im2{
+    background: url('./header_img/2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#im3{
+    background: url('./header_img/3.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#im4{
+    background: url('./header_img/4.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.qute_text{
+    position: absolute;
+    left: 40vw;
+    top: 30vw;
+    font-family: 'Absolute';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 69px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.divider{
+    background: rgba(241, 226, 229, 0.32);
+    padding-bottom: 2.8125rem;
+}
+.meet{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    min-height: 2rem;
+    max-height: 75vw;
+}
+#fade{
+    opacity: 0.2;
+    z-index: -1;
+    width: 50%;
+    height: 75vw;
+}
+.title{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+#meet_text{
+    color: #564135;
+    font-size: 5vw;
+    margin-top: 3%;
+    margin-left: -9%;
+    max-height: 0px;
+}
+.mbox{
+    border-radius: 10px;
+}
+#colom1{
+    width: 20%;
+    height: 50vw;
+    margin-top: 15%;
+    margin-left: -7.5%;
+}
+#colom2{
+    width: 20%;
+    height: 50vw;
+    margin-top: 15%;
+    margin-left: -41%;
+}
+#mbox1_img{
+    width: 100%;
+    height: 22vw;
+}
+#mbox1_txt{
+    width: 100%;
+    height: 20vw;
+    background: #E3DCDC;
+    font-family: 'OliverFont-Light-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #564135;
+}
+#mbox2_txt{
+    margin-top: -4px;
+    width: 100%;
+    height: 20vw;
+    background: #E3DCDC;
+    font-family: 'OliverFont-Light-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4vw;
+    text-align: center;
+    color: #564135;
+}
+#mbox2_img{
+    width: 100%;
+    height: 22vw;
+}
+#inner_txt1{
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 80%;
+    height: 100%;
+}
+#inner_txt2{
+    padding-top: 12%;
+    padding-left: 10%;
+    width: 80%;
+    height: 100%;
+}
+/* continue for meet flex box */
+#beli{
+    margin: 0 auto;
+    background: rgba(241, 226, 229, 0.32);
+}
+#belive{
+    font-size: 5vw;
+    text-align: center;
+    color: #564135;
+}
+#beli_qute{
+    font-family: 'Absolute';
+    font-style: normal;
+    margin-top: 2%;
+    font-weight: 400;
+    font-size: 2vw;
+    text-align: center;
+    color: #000;
+}
+.lc{
+    display: flex;
+    width: 100%;
+    max-height: 44vw;
+}
+.lcimg{
+    margin-left: 14%;
+    width: 38%;
+    height: 44vw;
+}
+#vision{
+    position: absolute;
+    width: 30%;
+    left: 54%;
+    margin-top: 5%;
+    font-family: 'OliverFont-Light-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.9vw;
+    text-align: center;
+    color: #000;
+}
+.lcq{
+    position: absolute;
+    margin-top: 40%;
+    left: 45.5%;
+    z-index: 25;
+    color: #9A7F7F;
+    font-family: 'Absolute';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+}
+#mean{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+#meaning{
+    width: 25%;
+    margin-top: 17px;
+    font-size: 5vw;
+    text-align: center;
+    color: #564135;
+}
+#mean_text{
+    width: 75%;
+    margin-top: 3%;
+    font-family: 'OliverFont-Light-Regular';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.5vw;
+    color: #000;
+}
+#mean_qute{
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 70%;
+    font-family: 'Absolute';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #000;
+}
+#lsit{
+    margin-top: 5vw;
+    text-align: center;
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 50px;
+    color: #564135;
+}
+#pfd{
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7vw;
+}
+.link_title{
+    text-align: center;
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 30px;
+    color: #564135;
+}
+.link{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    line-height: 20px;
+    text-decoration: none;
+    color: #564135;
+}
+#fqd{
+    padding-bottom: 0;
+}
+#arr{
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    margin-top: -7vh;
+    left: 86vw;
+    width: 7vw;
+    height: 7vw;
+}
+#fq{
+    margin-left: 4%;
+    font-family: 'Absolute';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    line-height: 42px;
+}
+#fcd{
+    font-family: 'FLOREN';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vh;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+@media (min-width: 768px) {
+    #p_m{
+        display: none;
+    }
+    #inner_txt1{
+        padding-top: 10%;
+    }
+    #mbox2_txt{
+        height: 17vw;
+        font-size: 1.2vw;
+    }
+    .hamburger{display: none;}
+    .nav_menu{display: flex;}
+    #fq{font-size: 4vh;}
+    #fcd{font-size: 2.6vh;}
+    .link_title{font-size: 4vh;}
+    .link{font-size: 3vh;}
+    #mean_text{
+        font-size: 1.5vw;
+    }
+    #vision{
+        font-size: 1.5vw;
+        margin-top: 13%;
+    }
+    #meaning,
+    #belive{font-size: 2.2vw;}
+    #beli_qute{
+        margin-left: 45%;
+        font-size: 1.7vw;
+    }
+    #lsit{
+        font-size: 2.4vw;
+    }
+    .mbox{
+        border-radius: 22px;
+    }
+    #mbox1_img{
+        height: 25vw;
+    }
+    #arr{
+        display: block;
+    }
+    .nav_socials{
+        display: block;
+    }
+}
+@keyframes p_m_a {
+    0% {
+        height: 0vw;
+    }
+    100% {
+        height: 50vw;
+    }
+}
+@keyframes p_m_a_r {
+    0% { 
+        height: 50vw;
+    }
+    100% {
+        height: 0vw;
+    }
+}
+@keyframes m_c_t  {
+    0% { 
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes m_c_t_r {
+    0% { 
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@font-face {
+    font-family: "Absolute";
+    src: url("./fonts/Absolute.ttf");
+}
+@font-face {
+    font-family: "FLOREN";
+    src: url("./fonts/FLOREN-Regular.ttf");
+}
+@font-face {
+    font-family: 'OliverFont-Light-Regular';
+    src: url("./fonts/OliverFont-Light-Regular.ttf");
+}
